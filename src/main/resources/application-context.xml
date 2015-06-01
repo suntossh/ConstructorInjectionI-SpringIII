@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id ="bean1" class="com.suntossh.spring.BeanA">
+		<constructor-arg value="Test" type="String"/>
+	</bean>
+	
+	<bean id ="bean2" class="com.suntossh.spring.BeanA">
+		<constructor-arg value="100" type="int"/>
+	</bean>
+	
+	<bean id ="bean2.5" class="com.suntossh.spring.BeanA">
+		<constructor-arg value="Santosh" type="String" />
+		<constructor-arg value="Pandey" type="String" />
+	</bean>
+	
+	<bean id ="bean3" class="com.suntossh.spring.BeanA">
+		<constructor-arg value="Santosh" type="String" index="1"/>
+		<constructor-arg value="Pandey" type="String" index="0"/>
+	</bean>
+	
+</beans>
